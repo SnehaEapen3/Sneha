@@ -1,51 +1,165 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>
-      Peaks and Professors
-    </title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneha Eapen | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
     <style>
-      body{
-        font-family: Calibri;
-        background-color: #f4f4f4;
-        margin: 0
-      }
+      * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --color-primary: #2c3e50;
+    --color-accent: #3498db;
+    --color-light: #f8f9fa;
+    --color-text: #333;
+    --color-text-light: #a4cfeb;
+}
+body {
+    font-family: Calibri, sans-serif;
+    line-height: 1.6;
+    color: var(--color-text);
+}
+.hero {
+    background-color: var(--color-primary);
+    color: white;
+    text-align: center;
+    padding: 4rem 2rem;
+}
 
-      header{
-        background-color: #222;
-        color: white;
-        padding: 20px;
-        text-align: center;
-      }
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
 
-      section{
-        background-color: white;
-        margin: 40px
-        padding: 30px;
-        border-radius: 8px;
-      }
+.subtitle {
+    font-size: 1.25rem;
+    color: var(--color-text-light);
+}
+.about {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+}
 
-      h2{
-        color: #333;
-      }
+.about h2 {
+    margin-bottom: 1rem;
+}
+.projects {
+    background-color: var(--color-light);
+    padding: 3rem 2rem;
+}
+
+.projects h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.project-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.project-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project-card h3 {
+    margin-bottom: 0.5rem;
+    color: var(--color-primary);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project-card p {
+    margin-bottom: 1rem;
+    color: #666;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project-card a {
+    color: var(--color-accent);
+    text-decoration: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.footer {
+    background-color: var(--color-primary);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+.social-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.social-links a {
+    color: var(--color-accent);
+    text-decoration: none;
+}
+.project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.social-links a:hover {
+    color: #5dade2;
+}
+
+.project-card a:hover {
+    text-decoration: underline;
+}
     </style>
-  </head>
-  <body>
-  <header>
-    <h1>
-      Website Header
-      <p>
-        Website subtitle
-      </p>
-    </h1>
+</head>
+<body>
+  <header class="hero">
+    <h1>Sneha Eapen</h1>
+    <p class="subtitle">Aspiring Cognitve Scientist</p>
   </header>
-  <section>
-    <h2>
-      About Us
-      <p>
-        Little About Us Blurb
-      </p>
-    </h2>
-  </section>
-  </body>
+  <main>
+    <section class="about">
+        <h2>About Me</h2>
+        <p>
+            Hi! I'm a student at UC San Diego studying Cognitive Science with a specialization in Machine Learning and Neural Networks.
+            I love building things for the web and learning new technologies.
+        </p>
+    </section>
+    <section class="projects">
+    <h2>Projects</h2>
+    <div class="project-grid">
+        <div class="project-card">
+            <h3>Project One</h3>
+            <p>A short description of what this project does and the technologies used.</p>
+            <a href="https://github.com/yourusername/project">View on GitHub</a>
+        </div>
+        <div class="project-card">
+            <h3>Project Two</h3>
+            <p>Another project with a brief description of its features.</p>
+            <a href="https://github.com/yourusername/project">View on GitHub</a>
+        </div>
+    </div>
+</section>
+</main>
+<footer class="footer">
+    <p>Connect with me:</p>
+    <ul class="social-links">
+        <li><a href="https://github.com/SnehaEapen3">GitHub</a></li>
+        <li><a href="https://linkedin.com/in/sneha-eapen-864098395">LinkedIn</a></li>
+        <li><a href="snehmary07@gmail.com">Email</a></li>
+    </ul>
+</footer>
+</body>
 </html>
